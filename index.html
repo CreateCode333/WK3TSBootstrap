@@ -1,0 +1,110 @@
+<!-- I am creating a website using HTML and Bootstrap today. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rockfish Species</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+
+  <!-- I used Bootstrap bg-secondary as my first class. -->
+
+  <body class="bg-secondary">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">More</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item active" href="./gallery.html">Gallery</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Resources</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="main-container" class="container pt-2 pb-5 bg-light">
+      <div>
+        <h1 class="text-center mt-5">Rockfish Species</h1>
+        <img
+          src="images/Copper Rockfish.JPG"
+          class="img-fluid"
+          alt="Copper rockfish image"
+          width="3000"
+        />
+        <br> <br>
+        <p> Sebastinae is a subfamily of marine fish belonging to the family Scorpaenidae in the order Scorpaeniformes. Their common names include rockfishes, rock perches, ocean perches, sea perches, thornyheads, scorpionfishes, sea ruffes and rockcods. Despite the latter name, they are not closely related to the cods in the genus Gadus, nor the rock cod, Lotella rhacina. The rockfish in the image above is a copper rockfish.
+        </p>
+      </div>
+    </div>
+
+    <!-- This is my example of the Bootstrap Grid System-->
+
+    <div class="container mt-5 mb-5 p-5 bg-info">
+
+      <div id="Rockfish Species" class="container text-center mb-5 fs-5">
+        <div class="row"><h3>Rockfish Species</h3></div>
+
+        <div class="row">
+          <div class="col-lg-2">Canary Rockfish</div>
+          <div class="col-lg-2">China Rockfish</div>
+          <div class="col-lg-2">Copper Rockfish</div>
+          <div class="col-lg-2">Black Rockfish</div>
+          <div class="col-lg-2">Blue Rockfish</div>
+          <div class="col-lg-2">Yelloweye Rockfish</div>
+        </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

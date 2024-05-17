@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockfish Species</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">More</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item active" href="./gallery.html">Gallery</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Resources</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="main-container" class="container pt-2 pb-5 bg-light">
+        <div>
+          <h1 class="text-center mt-5">Learn More</h1>
+          
+          <br> <br>
+          <p class="fs-4">If you would like to learn more about rockfish send me an email using the form below.</p>
+          </p>
+        </div>
+      </div>
+      <div class="container text-center mb-5 fs-2">
+        <div class="row">
+          <div class="col-md">
+            <div id="card-1" class="card bg-secondary">
+              <img
+                src="images/black rockfish.webp"
+                class="card-img-top"
+                alt="Black Rockfish"
+                width="100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Black Rockfish</h5>
+                <a href="#" class="btn btn-outline-info btn-lg">More Info</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div id="card-2" class="card bg-secondary">
+              <img
+                src="images/Tiger.jpg"
+                class="card-img-top"
+                alt="Image of a Tiger Rockfish."
+                width="100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tiger Rockfish</h5>
+                <a href="#" class="btn btn-outline-info btn-lg">More Info</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div id="card-3" class="card bg-secondary">
+              <img
+                src="images/yelloweyerockfish.webp"
+                class="card-img-top"
+                alt="Image of a Yelloweye Rockfish."
+                width="100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Yelloweye Rockfish</h5>
+                <a href="#" class="btn btn-outline-info btn-lg">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Description of what information you want to know more about.</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div> 
+
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Common Name</th>
+            <th scope="col">Scientific Name</th>
+            <th scope="col">Genus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Black Rockfish</td>
+            <td>Sebastes melonops</td>
+            <td>Scorpaenidae</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Yelloweye Rockfish</td>
+            <td>Sebastes ruberrimus</td>
+            <td>Scorpaenidae</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Tiger Rockfish</td>
+            <td>Sebastes nigrocinctus</td>
+            <td>Scorpaenidae</td>
+          </tr>
+        </tbody>
+      </table>
+     
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!-- I am creating a website using HTML and Bootstrap today. This is my "Gallery" page which has photos of different kinds of rockfish in it.  
+I connected  this page to Bootstrap, which is shown below as a link with node modules.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockfish Gallery</title>
+    <link
+    rel="stylesheet"
+    href="./node_modules/bootstrap/dist/css/bootstrap.css"
+  />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">More</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item active" href="#">Gallery</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Resources</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="main-container" class="container pt-2 pb-5 bg-light">
+        <div>
+            <h1 class="text-center mt-5">Rockfish Gallery</h1>
+          
+            <br> <br>
+            <p class="text-center fs-4">This is a photo gallery of different kinds of rockfish.</p>
+            </p>
+          </div>
+        </div>
+        <div class="container text-center mb-5 fs-2">
+          <div class="row">
+            <div class="col-md">
+              <div id="card-1" class="card bg-secondary">
+                <img
+                  src="images/blue rockfish.jpg"
+                  class="card-img-top"
+                  alt="Blue Rockfish"
+                  width="100"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Blue Rockfish</h5>
+                  <a href="#" class="btn btn-outline-info btn-lg">More Info</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md">
+              <div id="card-2" class="card bg-secondary">
+                <img
+                  src="images/canary rockfish.jpg"
+                  class="card-img-top"
+                  alt="Image of a Canary Rockfish."
+                  width="100"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Canary Rockfish</h5>
+                  <a href="#" class="btn btn-outline-info btn-lg">More Info</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md">
+              <div id="card-3" class="card bg-secondary">
+                <img
+                  src="images/china rockfish.jpg"
+                  class="card-img-top"
+                  alt="Image of a China Rockfish."
+                  width="100"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">China Rockfish</h5>
+                  <a href="#" class="btn btn-outline-info btn-lg">More Info</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+                <div id="card-4" class="card bg-secondary">
+                  <img
+                    src="images/Copper Rockfish.JPG"
+                    class="card-img-top"
+                    alt="Image of a Copper Rockfish."
+                    width="100"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Copper Rockfish</h5>
+                    <a href="#" class="btn btn-outline-info btn-lg">More Info</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md">
+                <div id="card-5" class="card bg-secondary">
+                  <img
+                    src="images/quillback rockfish.jpg"
+                    class="card-img-top"
+                    alt="Image of a Quillback Rockfish."
+                    width="100"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Quillback Rockfish</h5>
+                    <a href="#" class="btn btn-outline-info btn-lg">More Info</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>  
+</body>
+</html>
